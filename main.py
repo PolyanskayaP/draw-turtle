@@ -1,7 +1,7 @@
 import turtle
 #4 20 
-BODY_COLOR = 'red'
-GLASS_COLOR = 'skyblue'
+BODY_COLOR = 'skyblue'
+GLASS_COLOR = 'red'
 
 t = turtle.Turtle()  
 
@@ -23,6 +23,14 @@ def body():
     t.forward(10)
     t.right(90)
     t.down()
+    for i in range(2):
+        t.right(90)
+        t.forward(170)
+
+        t.left(90)
+        t.forward(90)
+
+    t.end_fill()
 
 
 
