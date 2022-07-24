@@ -4,17 +4,11 @@ t = turtle.Turtle()
 
 #t.color("blue")
 t.fillcolor("blue")
+t.pensize(10) #ширина линии 
 
-t.begin_fill() 
-t.forward(100)
-t.left(90) 
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.end_fill() 
+for i in range(50):
+    t.forward(150)
+    t.right(135) 
 
 turtle.done() 
 
