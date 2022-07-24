@@ -1,14 +1,35 @@
 import turtle
+#4 20 
+BODY_COLOR = 'red'
+GLASS_COLOR = 'skyblue'
 
 t = turtle.Turtle()  
 
-#t.color("blue")
-t.fillcolor("blue")
-t.pensize(10) #ширина линии 
+def body():
+    t.pensize(30)
+    t.fillcolor(BODY_COLOR)
 
-for i in range(50):
-    t.forward(150)
-    t.right(135) 
+    t.begin_fill()
+
+    t.right(90)
+    t.forward(50)
+    t.right(180)
+    t.circle(40, -180)
+    t.right(180)
+    t.forward(200)
+
+    t.up()
+    t.left(90)
+    t.forward(10)
+    t.right(90)
+    t.down()
+
+
+
+body()
+#glass()
+#backpack()
+
 
 turtle.done() 
 
